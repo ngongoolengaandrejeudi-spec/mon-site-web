@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Déposer une candidature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Déposer une candidature</h1>
+</header>
+<main>
+    <form id="demandeForm" onsubmit="enregistrerCandidat(event)">
+        <input type="text" id="nom" placeholder="Nom complet" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <label>CV :</label>
+        <input type="file" id="cv" accept=".pdf,.doc,.docx" required>
+        <label>Lettre de Motivation :</label>
+        <input type="file" id="lettreMotivation" accept=".pdf,.doc,.docx" required>
+        <label>Titre scolaire :</label>
+        <input type="file" id="titrescolaire" accept=".pdf,.jpg,.png" required>
+        <label>Poste souhaité :</label>
+        <input type="text" id="poste" required>
+        <button type="submit">Envoyer</button>
+    </form>
+    <div class="pub">
+         Déposez votre candidature maintenant !
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

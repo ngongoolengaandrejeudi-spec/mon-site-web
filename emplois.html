@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Offres d’emploi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Offres d’emploi</h1>
+</header>
+<main>
+    <input type="text" id="recherche" placeholder="Rechercher un emploi..." onkeyup="rechercherEmploi()">
+    <ul id="listeEmplois">
+
+        <li> <a href="Développeur Web">Développeur Web</a></li>
+        <li> <a href="Secrétaire">Secrétaire</a></li>
+        <li> <a href="Comptable">Comptable</a></li>
+        <li> <a href="Informaticien">Informaticien</a></li>
+    </ul>
+    <h2>Liste des offres d'emploi</h2>
+<ul id="liste-offres">
+  <!-- Les offres ajoutées apparaîtront ici -->
+</ul>
+
+<!-- Formulaire pour ajouter une nouvelle offre -->
+<h3>Ajouter une offre</h3>
+<form id="form-offre">
+  <input type="text" id="titre-offre" placeholder="Titre du poste" required>
+  <input type="text" id="lien-offre" placeholder="Lien vers l'offre" required>
+  <button type="submit">Publier l'offre</button>
+</form>
+
+    <button onclick="allerPostuler()">Voir Candidature</button>
+    <div class="pub">
+        <p>Ne manque pas votre oportunité ! <br>tous ces offre sont disponible pour toi veille tenté votre chance a un clic sûr le bouton <br><a href="allerPostuler">Voir Candidature</a></p>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
